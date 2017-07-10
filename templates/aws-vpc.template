@@ -2269,7 +2269,7 @@
             }
         },
         "NATGateway3": {
-            "Condition": "NATGatewayCondition&3AZCondition",
+            "Condition": "NATGateway&3AZCondition",
             "Description": "NAT 3 Gateway",
             "Value": {
                 "Ref": "NATGateway3"
@@ -2281,7 +2281,7 @@
             }
         },
         "NATGateway4": {
-            "Condition": "NATGatewayCondition&4AZCondition",
+            "Condition": "NATGateway&4AZCondition",
             "Description": "NAT 4 Gateway",
             "Value": {
                 "Ref": "NATGateway4"
@@ -2317,7 +2317,7 @@
             }
         },
         "NATInstance3": {
-            "Condition": "NATInstanceCondition&3AZCondition",
+            "Condition": "NATInstance&3AZCondition",
             "Description": "NAT 3 Instance",
             "Value": {
                 "Ref": "NATInstance3"
@@ -2329,7 +2329,7 @@
             }
         },
         "NATInstance4": {
-            "Condition": "NATInstanceCondition&4AZCondition",
+            "Condition": "NATInstance&4AZCondition",
             "Description": "NAT 4 Instance",
             "Value": {
                 "Ref": "NATInstance4"
