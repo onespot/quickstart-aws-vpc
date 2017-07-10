@@ -2244,6 +2244,102 @@
                 }
             }
         },
+        "NATGateway1": {
+            "Condition": "NATGatewayCondition",
+            "Description": "NAT 1 Gateway",
+            "Value": {
+                "Ref": "NATGateway1"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATGateway1"
+                }
+            }
+        },
+        "NATGateway2": {
+            "Condition": "NATGatewayCondition",
+            "Description": "NAT 2 Gateway",
+            "Value": {
+                "Ref": "NATGateway2"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATGateway2"
+                }
+            }
+        },
+        "NATGateway3": {
+            "Condition": "NATGatewayCondition&3AZCondition",
+            "Description": "NAT 3 Gateway",
+            "Value": {
+                "Ref": "NATGateway3"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATGateway3"
+                }
+            }
+        },
+        "NATGateway4": {
+            "Condition": "NATGatewayCondition&4AZCondition",
+            "Description": "NAT 4 Gateway",
+            "Value": {
+                "Ref": "NATGateway4"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATGateway4"
+                }
+            }
+        },
+        "NATInstance1": {
+            "Condition": "NATInstanceCondition",
+            "Description": "NAT 1 Instance",
+            "Value": {
+                "Ref": "NATInstance1"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATInstance1"
+                }
+            }
+        },
+        "NATInstance2": {
+            "Condition": "NATInstanceCondition",
+            "Description": "NAT 2 Instance",
+            "Value": {
+                "Ref": "NATInstance2"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATInstance2"
+                }
+            }
+        },
+        "NATInstance3": {
+            "Condition": "NATInstanceCondition&3AZCondition",
+            "Description": "NAT 3 Instance",
+            "Value": {
+                "Ref": "NATInstance3"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATInstance3"
+                }
+            }
+        },
+        "NATInstance4": {
+            "Condition": "NATInstanceCondition&4AZCondition",
+            "Description": "NAT 4 Instance",
+            "Value": {
+                "Ref": "NATInstance4"
+            },
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "${AWS::StackName}-NATInstance4"
+                }
+            }
+        },
         "PrivateSubnet1ACIDR": {
             "Condition": "PrivateSubnetsCondition",
             "Description": "Private subnet 1A CIDR in Availability Zone 1",
