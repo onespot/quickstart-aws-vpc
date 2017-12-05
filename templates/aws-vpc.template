@@ -2105,6 +2105,9 @@
                 },
                 "RouteTableIds": [
                     {
+                        "Ref": "PublicSubnetRouteTable"
+                    },
+                    {
                         "Ref": "PrivateSubnet1ARouteTable"
                     },
                     {
